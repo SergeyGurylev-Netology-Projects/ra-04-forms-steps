@@ -1,0 +1,96 @@
+.stepsContainer {
+    font-family: Calibri, sans-serif;
+    font-size: 1rem;
+
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stepsForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stepsForm label,
+.stepsForm input {
+    display: block;
+}
+
+.stepsFormDate, .stepsFormDistance {
+    border: 2px gray solid;
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+    margin-top: 0.4rem;
+    box-sizing: border-box;
+}
+
+.stepsFormButton {
+    margin-top: auto;
+    border: 2px gray solid;
+    border-radius: 0.7rem;
+    padding: 0.7rem 1.3rem;
+    background: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.stepsFormDate:focus, .stepsFormDistance:focus {
+    border: 2px #fa0 solid;
+    outline: 0;
+}
+
+.stepsFormButton:active {
+    border: 2px #fa0 solid;
+    outline: 0;
+}
+
+.stepsHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.stepsItems {
+    list-style: none;
+    padding: 1rem;
+    border: 2px gray solid;
+    border-radius: 1rem;
+    margin: 0;
+}
+
+.stepsItem:nth-child(n+1) {
+    /*margin-top: 1rem;*/
+}
+
+.stepsItem {
+    /*padding: 1rem;*/
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stepsItemDate {
+    width: 33%;
+    text-align: left;
+}
+
+.stepsItemDistance {
+    width: 23%;
+    text-align: right;
+}
+
+.stepsItemControls {
+    width: 43%;
+    text-align: right;
+}
+
+.stepsItemControls button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.stepsItemControls button:hover {
+    color: orange;
+}
